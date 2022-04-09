@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#dialogElement {
+  width: calc(-webkit-fit-content + 2rem);
+  width: calc(-moz-fit-content + 2rem);
+  width: calc(fit-content + 2rem);
+  position: absolute;
+  z-index: 999;
+  top: 40%;
+  left: 36%;
+  font-size: 6rem;
+  padding: 1.5rem 3rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin-left: 4.375rem;
+  margin-right: 4.375rem;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+body .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.125rem;
+}
+
+body .navigation .btn {
+  width: 8rem;
+  height: 8rem;
+  background-color: #6788af;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-size: 2.5625rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .navigation .btn:hover {
+  background-color: #74AA8D;
+}
+
+body .navigation .btn:active {
+  background-color: #31473b;
+}
+
+body .navigation .again {
+  font-size: 1.75rem;
+}
+
+body .navigation .go {
+  opacity: 35%;
+}
+
+body .navigation .go:active {
+  background-color: #74AA8D;
+}
+
+body .navigation .start {
+  font-size: 2.1875rem;
+}
+
+body .navigation .logo {
+  position: relative;
+  left: -8rem;
+}
+
+body .raceTrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 3.5rem;
+}
+
+body .raceTrack .track {
+  position: relative;
+}
+
+body .raceTrack .track img {
+  width: 50px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/*# sourceMappingURL=style.css.map */

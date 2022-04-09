@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+//Variables
+
+$goFontSize: 2.5625rem;
+$startFontSize: 2.1875rem;
+$againFontSize: 1.75rem;
+$btnWidthHeight: 8rem;
+$bodyMarginBlock: 4.375rem;
+$bodyMarginTopBottom: 1.1rem;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#dialogElement{
+	width: calc(fit-content + 2rem);
+	position:absolute;
+	z-index: 999;
+	top: 40%;
+	left: 36%;
+	font-size: 6rem;
+	padding: 1.5rem 3rem;	
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	font-family: "Mochiy Pop P One", sans-serif;
+	margin-left: $bodyMarginBlock;
+	margin-right: $bodyMarginBlock;
+	margin-top: $bodyMarginTopBottom;
+	margin-bottom: $bodyMarginTopBottom;
+	.navigation {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 2.125rem;
+		.btn {
+			width: $btnWidthHeight;
+			height: $btnWidthHeight;
+			background-color: #6788af;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			font-size: $goFontSize;
+			font-family: "Mochiy Pop P One", sans-serif;
+			border: none;
+			cursor: pointer;
+			transition:all 0.5s ease;
+		}
+		.btn:hover {
+			background-color: #74AA8D;
+		}
+		.btn:active {
+			background-color: #31473b;
+		}
+		.again {
+			font-size: $againFontSize;
+		}
+		.go{
+			opacity: 35%;
+		}
+		.go:active{
+			background-color: #74AA8D;
+		}
+		.start {
+			font-size: $startFontSize;
+		}
+		.logo {
+			position: relative;
+			left: -8rem;
+		}
+	}
+	.raceTrack {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 3.5rem;
+
+        .track{
+            position: relative;
+            img{
+                width: 50px;
+                height: 80px;
+                position:absolute;
+                top: 50%;
+                transform: translateY(-50%);
+				transition: all 1s ease;
+            }
+        }
+	}
+}
