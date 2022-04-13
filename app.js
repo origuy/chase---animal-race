@@ -117,24 +117,24 @@ let randomUser = () => {
     return animal
 
 };
-// let isWin = (animal) => {
-//     if(animal.position >= 1770){
-//         console.log(`${animal.name} WIN !!`)
-//         goGrabber.removeAttribute("disabled")
-//         animal.finised = true;
-//         animal.voice.play();
-//         if(runners.bird.finised === true || runners.chick.finised === true || runners.duck.finised === true || runners.dog.finised === true){
-//             winnerP.innerHTML = animal.name;
-//             dialog.toggleAttribute("open")
-//             goGrabber.setAttribute("disabled")
-//             setTimeout(() => {
-//                 dialog.toggleAttribute("open")
-//                 playAgain()
-//             }, 5000);
-//         }
+let isWin = (animal) => {
+    if(animal.position >= 1770){
+        console.log(`${animal.name} WIN !!`)
+        goGrabber.removeAttribute("disabled")
+        animal.finised = true;
+        animal.voice.play();
+        if(runners.bird.finised === true || runners.chick.finised === true || runners.duck.finised === true || runners.dog.finised === true){
+            winnerP.innerHTML = animal.name;
+            dialog.toggleAttribute("open")
+            goGrabber.setAttribute("disabled")
+            setTimeout(() => {
+                dialog.toggleAttribute("open")
+                playAgain()
+            }, 5000);
+        }
 
-//     }
-// }
+    }
+}
 let fairPlay = (animal) => {
     switch (animal.name) {
         case "bird":
