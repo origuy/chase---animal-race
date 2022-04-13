@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot of the website](/Assets/images/mobile%20(3).png)
+![screenshot of the website](assets/images/mobile.png)
 
 ### Links
 
