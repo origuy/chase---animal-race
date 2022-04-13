@@ -91,9 +91,7 @@ let startGame = () => {
     goGrabber.style.opacity = "1"
 
 };
-let playAgain = () => {
-   startGame()
-};
+
 let randomUser = () => {
     let ran = Math.floor(Math.random() * 4 );
     let animal;
